@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="projet_unit" transaction-type="RESOURCE_LOCAL">
+        <!--<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+
+        <!-- Specify your data source and database connection properties -->
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql11.freesqldatabase.com:3306/sql11689067"/>
+            <property name="javax.persistence.jdbc.user" value="sql11689067"/>
+            <property name="javax.persistence.jdbc.password" value="9BBGnfpQk9"/>
+
+            <!-- Hibernate specific properties -->
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+        <!-- Specify your entity classes -->
+        <!-- You can add more entity classes as needed -->
+
+    </persistence-unit>
+</persistence>
